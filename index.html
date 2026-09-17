@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luciano Tadeu - Portfólio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
     
     <!-- Fontes do Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,8 +16,29 @@
         <!-- Cabeçalho -->
         <header>
             <div class="logo-area">
-                <img src="logo.png" alt="Logo" class="minha-logo">
+                <img src="assets/logo.png" alt="Logo" class="minha-logo">
                 <h1>Luciano<br>Tadeu</h1>
+                <label class="switch">
+                    <input id="theme" type="checkbox">
+                    <span class="slider-theme">
+                        <div class="icons">
+                            <!-- Ícone da Lua -->
+                            <svg class="icon-toggle moon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12,22C6.5,22,2,17.5,2,12c0-4.7,3.4-8.9,8-9.8c0.4-0.1,0.9,0.1,1.1,0.5c0.2,0.4,0.1,0.9-0.2,1.2C9.7,5.1,9,6.8,9,8.5 c0,3.6,2.9,6.5,6.5,6.5c1.7,0,3.4-0.7,4.6-1.9c0.3-0.3,0.8-0.4,1.2-0.2c0.4,0.2,0.6,0.6,0.5,1.1C20.9,18.6,16.7,22,12,22z M7.6,5.3C5.4,6.8,4,9.2,4,12c0,4.4,3.6,8,8,8c2.8,0,5.2-1.4,6.7-3.6c-1,0.4-2.1,0.6-3.2,0.6C10.8,17,7,13.2,7,8.5 C7,7.4,7.2,6.3,7.6,5.3z"/>
+                            </svg>
+
+                            <!-- Ícone do Sol -->
+                            <svg class="icon-toggle sun" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <title>sun</title>
+                                <path d="M11 3a1 1 0 0 1 2 0v2a1 1 0 0 1-2 0V3zm0 16a1 1 0 0 1 2 0v2a1 1 0 0 1-2 0v-2zm1-2a5 5 0 1 1 0-10 5 5 0 0 1 0 10zm0-2a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-9-2a1 1 0 0 1 0-2h2a1 1 0 0 1 0 2H3zm16 0a1 1 0 0 1 0-2h2a1 1 0 0 1 0 2h-2zm-.707-8.707a1 1 0 0 1 1.414 1.414l-1.581 1.581a1 1 0 0 1-1.414-1.414l1.58-1.581zM5.707 19.707a1 1 0 1 1-1.414-1.414l1.581-1.581a1 1 0 1 1 1.414 1.414l-1.58 1.581zm-1.414-14a1 1 0 0 1 1.414-1.414l1.581 1.581a1 1 0 0 1-1.414 1.414l-1.581-1.58zm15.414 12.586a1 1 0 0 1-1.414 1.414l-1.581-1.581a1 1 0 0 1 1.414-1.414l1.581 1.58z" fill-rule="nonzero"/>
+                            </svg>
+                        </div>
+                    </span>
+                </label>
+                <label class="switch">
+                    <input id="language" type="checkbox">
+                    <span class="slider"></span>
+                </label>
             </div>
             
             <nav class="nav-links">
@@ -40,7 +61,7 @@
                     <svg width="14" height="20" viewBox="0 0 14 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M6 2H8M7 15V15.01M1 3C1 2.46957 1.21071 1.96086 1.58579 1.58579C1.96086 1.21071 2.46957 1 3 1H11C11.5304 1 12.0391 1.21071 12.4142 1.58579C12.7893 1.96086 13 2.46957 13 3V17C13 17.5304 12.7893 18.0391 12.4142 18.4142C12.0391 18.7893 11.5304 19 11 19H3C2.46957 19 1.96086 18.7893 1.58579 18.4142C1.21071 18.0391 1 17.5304 1 17V3Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
-                    <span class="btn-texto">Contato</span>
+                    <span class="btn-texto" data-translate="contato-text">Contato</span>
                 </a>
             </nav>
         </header>
@@ -48,14 +69,13 @@
         <main>
             <!-- Seção Sobre -->
             <section class="sobre">
-                <h2>SOBRE</h2>
+                <h2 data-translate="sobre-title">ABOUT</h2>
                 <div class="sobre-content">
-                    <!-- Espaço livre para sua foto -->
                     <div class="profile-pic">
-                        <img src="perfil.png" alt="Luciano Tadeu">
+                        <img src="assets/perfil.png" alt="Luciano Tadeu">
                     </div>
-                    <p>
-                        Graduando em Engenharia de Computação pela Universidade Federal de Mato Grosso (UFMT), com formação prevista para 2029 e sólida base matemática. Possui experiência prática no desenvolvimento de sistemas de ponta a ponta, desde aplicativos móveis em Flutter integrando UI/UX no Figma, até sistemas desktop em Java com persistência de dados em MySQL e otimização de algoritmos complexos em C. Com vivência profissional em educação tecnológica (Robótica/STEM) e suporte administrativo-financeiro no TJMT, demonstra facilidade em traduzir conceitos técnicos para públicos diversos e gerenciar dados. Inglês intermediário com foco técnico.
+                    <p data-translate="sobre-text">
+                        Undergraduate in Computer Engineering at the Federal University of Mato Grosso (UFMT), expected to graduate in 2029 with a solid mathematical foundation. Has practical experience in end-to-end system development, ranging from mobile applications in Flutter integrated with UI/UX prototyping in Figma, to desktop systems in Java with MySQL data persistence, and optimization of complex algorithms in C. With professional experience in technology education (Robotics/STEM) and administrative-financial support at TJMT, demonstrates a strong ability to translate technical concepts for diverse audiences and manage data. Intermediate English with a technical focus.
                     </p>
                 </div>
             </section>
@@ -65,51 +85,51 @@
                 
                 <!-- Coluna Formação -->
                 <div class="coluna">
-                    <h3 class="coluna-title">formação</h3>
+                    <h3 class="coluna-title" data-translate="formacao-title">education</h3>
                     
                     <div class="item">
-                        <span class="data">2024 - Presente</span>
-                        <h4>UFMT - Universidade Federal de Mato Grosso</h4>
-                        <p>Bacharelado em Engenharia de Computação</p>
+                        <span class="data" data-translate="formacao-data-1">2024 - Present</span>
+                        <h4 data-translate="formacao-text-1">UFMT - Federal University of Mato Grosso</h4>
+                        <p data-translate="formacao-tipo-1">Bachelor's Degree in Computer Engineering</p>
                     </div>
                 </div>
 
                 <!-- Coluna Atuação -->
                 <div class="coluna">
-                    <h3 class="coluna-title">atuação</h3>
+                    <h3 class="coluna-title" data-translate="atuacao-title">experience</h3>
                     
                     <div class="item">
-                        <span class="data">2026 - Presente</span>
-                        <h4>UFMT - Universidade Federal do Mato Grosso</h4>
-                        <p>Monitor de Fundamentos Algébricos</p>
+                        <span class="data" data-translate="atuacao-data-1">2026 - Present</span>
+                        <h4 data-translate="atuacao-text-1">UFMT - Federal University of Mato Grosso</h4>
+                        <p data-translate="atuacao-tipo-1">Algebraic Foundations Teaching Assistant</p>
                     </div>
                     
                     <div class="item">
-                        <span class="data">2024 - 2025</span>
-                        <h4>Instituição Adventista Central</h4>
-                        <p>Professor de Robótica e Matemática</p>
+                        <span class="data" data-translate="atuacao-data-2">2024 - 2025</span>
+                        <h4 data-translate="atuacao-text-2">Central Adventist Institution</h4>
+                        <p data-translate="atuacao-tipo-2">Robotics and Mathematics Teacher</p>
                     </div>
 
                     <div class="item">
-                        <span class="data">2022 - 2023</span>
-                        <h4>TJMT - Tribunal de Justiça do Estado de Mato Grosso</h4>
-                        <p>Estagiário Administrativo</p>
+                        <span class="data" data-translate="atuacao-data-3">2022 - 2023</span>
+                        <h4 data-translate="atuacao-text-3">TJMT - Court of Justice of the State of Mato Grosso</h4>
+                        <p data-translate="atuacao-tipo-3">Administrative Intern</p>
                     </div>
 
                     <div class="item">
-                        <span class="data">Fev 2024 - Ago 2024</span>
-                        <h4>Raia Drogasil S/A</h4>
-                        <p>Balconista</p>
+                        <span class="data" data-translate="atuacao-data-4">Feb 2024 - Aug 2024</span>
+                        <h4 data-translate="atuacao-text-4">Raia Drogasil S/A</h4>
+                        <p data-translate="atuacao-tipo-4">Pharmacy Clerk</p>
                     </div>
                 </div>
 
                 <!-- Coluna Projetos -->
                 <div class="coluna">
-                    <h3 class="coluna-title">projetos</h3>
+                    <h3 class="coluna-title" data-translate="projetos-title">projects</h3>
                     
                     <a href="https://github.com/Luciano-Tadeu/app_cienciasemmoage" class="item item-projeto" target="_blank" rel="noopener noreferrer">
                         <span class="data">2026</span>
-                        <h4>Aplicativo Mobile "Ciência sem Moage"</h4>
+                        <h4 data-translate="projeto-title-1">Mobile Application "Ciência sem Moage"</h4>
                         <p>Flutter, Dart, Figma</p>
                         <!-- A setinha agora é um span para não conflitar com o link principal -->
                         <span class="icon-link">
@@ -120,9 +140,21 @@
                         </span>
                     </a>
 
+                    <a href="https://luciano-tadeu.github.io/Memory-Game/" class="item item-projeto" target="_blank" rel="noopener noreferrer">
+                        <span class="data">2026</span>
+                        <h4 data-translate="projeto-title-2">Memory Game</h4>
+                        <p>HTML, CSS, Javascript</p>
+                        <span class="icon-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M7 17L17 7"></path>
+                                <path d="M7 7h10v10"></path>
+                            </svg>
+                        </span>
+                    </a>   
+
                     <a href="https://github.com/Luciano-Tadeu/Sistema-Controle-de-Acesso" class="item item-projeto" target="_blank" rel="noopener noreferrer">
                         <span class="data">2026</span>
-                        <h4>Sistema de Controle de Acesso</h4>
+                        <h4 data-translate="projeto-title-3">Acess Control System</h4>
                         <p>Java, JavaFX, MySQL</p>
                         <span class="icon-link">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -134,50 +166,22 @@
 
                     <a href="https://github.com/Luciano-Tadeu/Sistema-de-Controle-de-Transporte-Aereo" class="item item-projeto" target="_blank" rel="noopener noreferrer">
                         <span class="data">2025</span>
-                        <h4>Sistema de Controle de Transporte Aereo</h4>
-                        <p>C C++, Estrutura de Dados</p>
+                        <h4 data-translate="projeto-title-4">Air Transport Management System</h4>
+                        <p>C/C++</p>
                         <span class="icon-link">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M7 17L17 7"></path>
                                 <path d="M7 7h10v10"></path>
                             </svg>
                         </span>
-                    </a>    
+                    </a>
+                    
                     </div>
                 </div>
                 
             </section>
         </main>
     </div>
-    <!-- Script para os botões de copiar -->
-    <script>
-        function configurarBotaoCopiar(idBotao, textoOriginal) {
-            const botao = document.getElementById(idBotao);
-            if (!botao) return;
-
-            botao.addEventListener('click', function(event) {
-                event.preventDefault(); // Evita que a página pule para o topo
-                
-                const textoParaCopiar = botao.getAttribute('data-copy');
-                const spanTexto = botao.querySelector('.btn-texto');
-                
-                // Copia para a área de transferência
-                navigator.clipboard.writeText(textoParaCopiar).then(() => {
-                    // Muda o texto e adiciona a classe de animação
-                    if (spanTexto) spanTexto.textContent = 'Copiado!';
-                    botao.classList.add('copiado-anim');
-                    
-                    // Espera 2.5 segundos e reverte para o normal
-                    setTimeout(() => {
-                        if (spanTexto) spanTexto.textContent = textoOriginal;
-                        botao.classList.remove('copiado-anim');
-                    }, 2500);
-                });
-            });
-        }
-
-        configurarBotaoCopiar('btn-email', 'Email');
-        configurarBotaoCopiar('btn-contato', 'Contato');
-    </script>
+    <script src="scripts/script.js"></script>
 </body>
 </html>
